@@ -25,5 +25,8 @@ subprojects {
         signing {
             useGpgCmd()
         }
+        tasks.withType(Sign) {
+            enabled = false
+        }
     }
 }
